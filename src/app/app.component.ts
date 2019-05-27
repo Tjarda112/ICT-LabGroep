@@ -16,8 +16,9 @@ export class AppComponent {
 
   public appMenu = [
     {title: 'Home', url: '/home', icon: 'list'},
-    /**{title: 'Bestanden', url: '/upload', icon: 'add'},**/
-    {title: 'Member', url: '/user', icon: 'contact'}
+    {title: 'Product', url: '/upload', icon: 'add'},
+    {title: 'Search Product', url: '/search', icon: 'add'},
+    /**{title: 'Member', url: '/user', icon: 'contact'}**/
 
   ]
   @ViewChild(NavController) nav: NavController;

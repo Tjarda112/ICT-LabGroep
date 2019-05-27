@@ -6,8 +6,10 @@
 		</ion-buttons>
 	</ion-toolbar>
 </ion-header>
-
-<ion-content padding>
+<div class="titleicon">
+	<img src="assets/images/logo.png" width="150px" />
+</div>
+<ion-content fullscreen style="--color: transparent; --background: url('../assets/images/cheese.jpg') no-repeat center center fixed">
 	<form (ngSubmit)="login()" [formGroup]="loginForm">
 		<ion-list inset>
 
@@ -31,7 +33,7 @@
 		<div padding-horizontal>
 			<div class="form-error">{{loginError}}</div>
 
-			<ion-button full type="submit" [disabled]="!loginForm.valid">Log in</ion-button>
+			<ion-button expand="block" type="submit" [disabled]="!loginForm.valid">Log in</ion-button>
 			<div class="login-footer">
 				<p>
 					<a href="#">Forgot password?</a>
@@ -41,7 +43,7 @@
 
 			<ion-list>
 
-			<ion-button ion-button icon-left block clear (click)="signup()">
+			<ion-button expand="block" ion-button icon-left block clear (click)="signup()">
 					<ion-icon name="person-add"></ion-icon>
 					Sign up
 				</ion-button>
